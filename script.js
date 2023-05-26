@@ -74,3 +74,15 @@ document.getElementById('myForm').addEventListener('submit', function(event){
 
     jungleFormValue.innerHTML = "<h2>" + userInputArrayModified[0] + "</h2>";
 })
+
+function formValidation() {
+    var input = document.getElementById('name').value;
+
+    if(/^[a-zA-z]+\, [a-zA-z]+\, [a-zA-z]+\, [a-zA-z]+\, [a-zA-z]+$/.test(input) == false) {
+        console.log("working");
+        document.getElementsByClassName('textError')[0].style.display = "block";
+        return false;
+    }
+    return true;
+
+}

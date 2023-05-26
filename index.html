@@ -9,31 +9,34 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>League Randomizer</h1>
+    <div class="logo_container">
+        <img src="CSS/media/pngegg.png" alt="zed_logo">
+    </div>
     <form name="myForm" id="myForm">
-        <input type="text" name="name" id="name" required>
-        <input type="submit" value="Submit">
+        <input type="text" name="name" id="name" pattern="^[a-zA-z]+, [a-zA-z]+, [a-zA-z]+, [a-zA-z]+, [a-zA-z]+$" title="Three names serperated using commas ','" required>
+        <span class="textError">Inappropriate format</span>
+        <input type="submit" value="SUBMIT" class="formSubmit">
     </form>
     <div class="roles_container">
         <div id="top_container" class="role_container">
             <h3>Top</h3>
-            <div id="top_form_value"></div>
+            <div id="top_form_value" class="role_form_value"></div>
         </div>
         <div id="bottom_container" class="role_container">
             <h3>Bottom</h3>
-            <div id="bottom_form_value"></div>
+            <div id="bottom_form_value" class="role_form_value"></div>
         </div>
         <div id="support_container" class="role_container">
             <h3>Support</h3>
-            <div id="support_form_value"></div>
+            <div id="support_form_value" class="role_form_value"></div>
         </div>
         <div id="mid_container" class="role_container">
             <h3>Mid</h3>
-            <div id="mid_form_value"></div>
+            <div id="mid_form_value" class="role_form_value"></div>
         </div>
         <div id="jungle_container" class="role_container">
             <h3>Jungle</h3>
-            <div id="jungle_form_value"></div>
+            <div id="jungle_form_value" class="role_form_value"></div>
         </div>
     </div>
 </body>
