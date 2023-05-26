@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&family=Roboto+Mono&display=swap');
+
 body {
     background-color: #0b0b0b;
     color: #ffffff;
+    font-family: 'Roboto Mono', monospace;
 }
 
 h1 {
@@ -44,7 +47,6 @@ h1 {
     justify-content: center;
     align-items: center;
     background-color: #c4351f;
-    border: 2px solid black;
 }
 
 #myForm {
@@ -64,6 +66,7 @@ h1 {
     cursor: pointer;
     border-radius: 9px;
     border: none;
+    font-family: 'Roboto Mono', monospace;
 } 
 
 #name {
@@ -73,6 +76,7 @@ h1 {
     font-size: 20px;
     text-align: center;
     color: #950100;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .textError {
